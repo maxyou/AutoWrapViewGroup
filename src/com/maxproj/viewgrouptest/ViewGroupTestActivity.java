@@ -20,27 +20,29 @@ public class ViewGroupTestActivity extends Activity {
 		viewgroup_grid2 = (AutoWrapViewGroup)findViewById(R.id.viewgroup_grid2);
 		
 		addTextViewToAddedViewGroup(viewgroup_grid, "1----------");
-		addTextViewToAddedViewGroup(viewgroup_grid, "2----");
+		addTextViewToAddedViewGroup(viewgroup_grid, "2~~~~~~~~");
 		addTextViewToAddedViewGroup(viewgroup_grid, "3------");
 		addTextViewToAddedViewGroup(viewgroup_grid, "4===");
-		addTextViewToAddedViewGroup(viewgroup_grid, "5======");
+		addTextViewToAddedViewGroup(viewgroup_grid, "5======================================");
 		addTextViewToAddedViewGroup(viewgroup_grid, "6~~~");
 		addTextViewToAddedViewGroup(viewgroup_grid, "7++++++");
 		addTextViewToAddedViewGroup(viewgroup_grid, "8**** ");
-		addTextViewToAddedViewGroup(viewgroup_grid, "9= ");
+		addTextViewToAddedViewGroup(viewgroup_grid, "9==========");
 		addTextViewToAddedViewGroup(viewgroup_grid, "10_____ ");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "11^^^^^^^^^^^^^^^^^");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "1----------");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "2----");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "3------");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "4===");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "5======");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "6~~~");
+		
+		addTextViewToAddedViewGroup(viewgroup_grid2, "-2**********");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "-1+++++++");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "0^^^^^^^^^^^^^^^^^");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "1_____ ");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "2~~~~~~~~");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "3=====================");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "4----------");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "5~~~");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "6------");
 		addTextViewToAddedViewGroup(viewgroup_grid2, "7++++++");
 		addTextViewToAddedViewGroup(viewgroup_grid2, "8**** ");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "9= ");
-		addTextViewToAddedViewGroup(viewgroup_grid2, "10_____ ");
-		
+		addTextViewToAddedViewGroup(viewgroup_grid2, "9==========");
+		addTextViewToAddedViewGroup(viewgroup_grid2, "10===");
 	}
 	
 	public void addTextViewToAddedViewGroup(AutoWrapViewGroup awvg, String input_string) {
