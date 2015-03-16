@@ -10,8 +10,10 @@ import android.view.ViewGroup;
 public class AutoWrapViewGroup extends ViewGroup {
 	public AutoWrapViewGroup(Context context, AttributeSet attrs) {
 		super(context, attrs);
+		// TODO Auto-generated constructor stub
 	}
 
+	private final static String TAG = "AutoWrapViewGroup";
 
 	private final static int VIEW_MARGIN = 10;
 
@@ -21,6 +23,8 @@ public class AutoWrapViewGroup extends ViewGroup {
 
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+		Log.d(TAG, "AutoWrapViewGroup widthMeasureSpec = " + widthMeasureSpec
+				+ " heightMeasureSpec" + heightMeasureSpec);
 
 		for (int index = 0; index < getChildCount(); index++) {
 			final View child = getChildAt(index);
@@ -40,14 +44,18 @@ public class AutoWrapViewGroup extends ViewGroup {
 		
 		final int count = getChildCount();
 		int rightMove = 0;
-		int bottomMove = this.getChildAt(0).getMeasuredHeight();
+		int bottomMove = 0;
 		
 		for (int i = 0; i < count; i++) {
 
+			
 			View child = this.getChildAt(i);
 			int width = child.getMeasuredWidth();
 			int height = child.getMeasuredHeight();
 			
+			if(i == 0){
+				bottomMove = height + VIEW_MARGIN;
+			}
 			
 			rightMove += width + VIEW_MARGIN;
 
